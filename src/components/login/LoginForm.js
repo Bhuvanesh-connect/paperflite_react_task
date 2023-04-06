@@ -75,7 +75,7 @@ function LoginForm() {
                     </Form.Group>
                     <Form.Group className="mb-3" controlId="formGroupPassword">
                         <Form.Label>Password</Form.Label>
-                        <Form.Control type="text" placeholder="Enter password" name='password' onChange={(event)=>ChangeHandler(event)} autoComplete='off'/>
+                        <Form.Control type="password" placeholder="Enter password" name='password' onChange={(event)=>ChangeHandler(event)} autoComplete='off'/>
                         <span className='error_msg'>{formErrors.password}</span>
                     </Form.Group>
                     <div className='forgot_password'><Link to='/forgot_password'>Forgot Password?</Link></div>
