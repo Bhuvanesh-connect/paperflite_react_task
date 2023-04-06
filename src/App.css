@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+html,
+body {
+  background: #f8f8fb;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  letter-spacing: 0.03em;
+  color: #000000;
+}
+img {
+  max-width: 100%;
+}
+p{
+    margin-bottom: 0 !important;
+}
+.App{
+  height: 100vh;
+  overflow-y: auto;
+}
+
+/* CSS Variables*/
+
+:root {
+  --default-text-color:#000000;
+  --pink-text-color: #E51058;
+}
