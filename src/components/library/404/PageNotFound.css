@@ -3,12 +3,11 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-color: #ebebeb;
+    margin: 0 auto;
 }
 .PageNotFound > div{
-    background-color: #ffffff;
     border-radius: 6px;
-    padding: 20px 60px;
+    padding: 20px;
 }
 .PageNotFound h2{
     font-size: 60px;
@@ -20,15 +19,18 @@
 }
 .PageNotFound .btn_returnToLogin{
     padding: 6px 10px;
-    background-color: #086afd;
+    background-color: var(--pink-text-color);
     border-radius: 6px;
     color: #ffffff;
     text-decoration: none;
     cursor: pointer;
 }
-.PageNotFound .btn_returnToHome:hover{
-    filter: invert(1);
+.PageNotFound .btn_returnToLogin:hover{
+    background-color: transparent !important;
+    border: 1px solid var(--pink-text-color) !important;
+    color: var(--pink-text-color) !important;
 }
+
 
 @media screen and (max-width:768px){
     .PageNotFound p{

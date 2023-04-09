@@ -7,7 +7,7 @@
 }
 .LoginPage .content_row{
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
     height: 100%;
     margin: 0;
 }
@@ -17,88 +17,101 @@
     align-items: center;
     padding: 0;
 }
-.LoginPage .LoginForm{
+.LoginPage .Login_Card{
     width: 360px;
     max-width: 450px;
     min-height: 400px;
-    max-height: 900px;
+    max-height: 850px;
     background-color: #ffffff;
     border-radius: 15px;
     border: 0;
     background-color: rgba(255, 255, 255, 0.5);
     box-shadow: 0px 4px 24px 0px #12121226;
+    /* backdrop-filter:blur(5px); */
 }
-.LoginPage .LoginForm .card-body{
+.LoginPage .Login_Card .card-header{
     padding: 30px 25px;
+    border: 0;
+    background-color: transparent;
 }
-.LoginPage .LoginForm .brand_logo{
+.LoginPage .Login_Card .card-header .brand_logo{
     width: 160px;
 }
-.LoginPage .LoginForm .heading{
-    font-size: 30px;
-    font-weight: 700;
-    margin: 20px 0;
-    line-height: 35px;
+.LoginPage .Login_Card .card-body{
+    padding: 0 25px 30px 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 300px;
 }
-.LoginPage .LoginForm .form-label{
+.LoginPage .Login_Card .card-body .LoginForm{
+    width: 100%;
+}
+
+.LoginPage .Login_Card .card-body .LoginForm .heading{
+    font-size: 28px;
+    font-weight: 700;
+    margin: 0 0 20px 0;
+    line-height: 32px;
+}
+.LoginPage .Login_Card .card-body .LoginForm .form-label{
     color: #717274;
     font-weight: 500;
 }
-.LoginPage .LoginForm .form-control{
+.LoginPage .Login_Card .card-body .LoginForm .form-control{
     border: 0;
     border-bottom: 2px solid #71727477 !important;
     border-radius: 0;
     background-color: transparent;
     padding: 0.375rem 0.75rem 0.375rem 0;
 }
-.LoginPage .LoginForm .form-control:focus {
+.LoginPage .Login_Card .card-body .LoginForm .form-control:focus {
     background-color: transparent;
     border-color: #333333 !important;
     outline: 0;
     box-shadow: none;
 }
-.LoginPage .LoginForm .forgot_password{
+.LoginPage .Login_Card .card-body .LoginForm .forgot_password{
     text-align: end;
 }
-.LoginPage .LoginForm .btn_continue{
+.LoginPage .Login_Card .card-body .LoginForm .btn_continue{
     background-color: var(--pink-text-color) !important;
     border: 1px solid var(--pink-text-color) !important;
     width: 100%;
     font-size: 18px;
     margin-top: 20px;
 }
-.LoginPage .LoginForm .btn_continue:hover{
+.LoginPage .Login_Card .card-body .LoginForm .btn_continue:hover{
     background-color: transparent !important;
     border: 1px solid var(--pink-text-color) !important;
     color: var(--pink-text-color) !important;
 }
-.LoginPage .LoginForm .sign_up{
+.LoginPage .Login_Card .card-body .LoginForm .sign_up{
     text-align: center;
     font-weight: 500;
     margin: 60px 0 0 0 ;
 }
-.LoginPage .LoginForm a{
+.LoginPage .Login_Card .card-body .LoginForm .link{
     color: var(--pink-text-color) !important;
     text-decoration: none;
     font-weight: 500;
 }
-.LoginPage .LoginForm .card-footer{
+.LoginPage .Login_Card .card-footer{
     display: none;
     background-color: #ffffff;
     padding: 30px 0 0 0;
     border: 0;
 }
-.LoginPage .LoginForm .illustration_openhead,.illustration_tape{
+.LoginPage .Login_Card .illustration_openhead,.illustration_tape{
     display: none;
 }
-.LoginPage .LoginForm .error_msg{
+.LoginPage .Login_Card .card-body .LoginForm .error_msg{
     color: var(--pink-text-color);
 }
 
 
-
 @media screen and (max-width:576px) {
-    .LoginPage .LoginForm {
+    .LoginPage .Login_Card {
         width: 100%;
         border-radius: 0;
         box-shadow: none;
@@ -110,26 +123,29 @@
         background-image: none;
         background-color: #ffffff;
     }
-    .LoginPage .LoginForm {
+    .LoginPage .Login_Card {
         width: 100%;
         height: 100%;
         position: relative;
         overflow-x: hidden;
     }
-    .LoginPage .LoginForm .card-body{
-        padding: 80px 25px 0 25px;
+    .LoginPage .Login_Card .card-header{
+        padding: 80px 25px 20px 25px;
     }
-    .LoginPage .LoginForm .card-footer{
+    .LoginPage .Login_Card .card-body{
+        padding: 0 25px 0 25px;
+    }
+    .LoginPage .Login_Card .card-footer{
         display: block;
     }
-    .LoginPage .LoginForm .illustration_tape{
+    .LoginPage .Login_Card .illustration_tape{
         display: block;
         position: absolute;
         right: -5%;
         top: 3%;
         width: 100px;
     }
-    .LoginPage .LoginForm .illustration_openhead{
+    .LoginPage .Login_Card .illustration_openhead{
         display: block;
         width: 100%;
     }
@@ -140,11 +156,7 @@
 
 /*Success Message*/
 
-.SuccessMsg .content{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 300px;
+.SuccessMsg{
     text-align: center;
     font-weight: 500;
     font-size: 24px;
