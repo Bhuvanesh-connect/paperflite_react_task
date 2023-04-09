@@ -16,6 +16,12 @@ function LoginForm() {
       setFormValues({...formValues,[name]:value});
   }
 
+  const ShowPassword = () =>{
+    let passwordInput = document.getElementById("password_input")
+    let newState = passwordInput.type  === "password" ? "text" : "password";
+    passwordInput.type = newState;
+  }
+
   const Validate = (values) =>{
       const errors = {};
       const regex = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/i;
@@ -53,10 +59,6 @@ function LoginForm() {
         console.log("formValues",formValues);
 
         navigate("/login/success");
-
-        setTimeout(()=>{
-            alert("logged In")
-        },3000)
     }
   },[formErrors])
 
@@ -64,14 +66,18 @@ function LoginForm() {
     <>
       <Form onSubmit={SubmitHandler} className='LoginForm'>
           <h2 className='heading'>Please login to continue</h2>
-          <Form.Group className="mb-3" controlId="formGroupEmail">
+          <Form.Group className="mb-3" controlId="email_input">
               <Form.Label>Email</Form.Label>
               <Form.Control type="text" placeholder="Enter email" name='email' onChange={(event)=>ChangeHandler(event)} autoComplete='off'/>
               <span className='error_msg'>{formErrors.email}</span>
           </Form.Group>
-          <Form.Group className="mb-3" controlId="formGroupPassword">
+          <Form.Group className="mb-3" controlId="password_input">
               <Form.Label>Password</Form.Label>
-              <Form.Control type="password" placeholder="Enter password" name='password' onChange={(event)=>ChangeHandler(event)} autoComplete='off'/>
+              <div className='passwordBox'>
+                  <Form.Control type="password" placeholder="Enter password" name='password' onChange={(event)=>ChangeHandler(event)} autoComplete='off'/>
+                  <button type="button" className="icon-eye" onClick={ShowPassword}>Eye</button>
+              </div>
+              
               <span className='error_msg'>{formErrors.password}</span>
           </Form.Group>
           <div className='forgot_password'><Link to='/forgot_password' className='link'>Forgot Password?</Link></div>
