@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/Bhuvanesh-connect/paperflite_react_task/static/css/main.600ac58a.css",
+    "main.js": "/Bhuvanesh-connect/paperflite_react_task/static/js/main.e11b4129.js",
+    "static/js/787.279515d9.chunk.js": "/Bhuvanesh-connect/paperflite_react_task/static/js/787.279515d9.chunk.js",
+    "static/media/login_bg.jpg": "/Bhuvanesh-connect/paperflite_react_task/static/media/login_bg.86c4011cd1565af5d748.jpg",
+    "static/media/illustration_openhead.png": "/Bhuvanesh-connect/paperflite_react_task/static/media/illustration_openhead.3a2208a3c06f3fbc7a2f.png",
+    "static/media/illustration_tape.png": "/Bhuvanesh-connect/paperflite_react_task/static/media/illustration_tape.9c0e2d63dd128984559e.png",
+    "index.html": "/Bhuvanesh-connect/paperflite_react_task/index.html",
+    "static/media/icon-feather-eye-off.svg": "/Bhuvanesh-connect/paperflite_react_task/static/media/icon-feather-eye-off.da4d099c238e69e947bc.svg",
+    "static/media/icon-feather-eye.svg": "/Bhuvanesh-connect/paperflite_react_task/static/media/icon-feather-eye.02f96946432081efecb4.svg",
+    "main.600ac58a.css.map": "/Bhuvanesh-connect/paperflite_react_task/static/css/main.600ac58a.css.map",
+    "main.e11b4129.js.map": "/Bhuvanesh-connect/paperflite_react_task/static/js/main.e11b4129.js.map",
+    "787.279515d9.chunk.js.map": "/Bhuvanesh-connect/paperflite_react_task/static/js/787.279515d9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.600ac58a.css",
+    "static/js/main.e11b4129.js"
+  ]
+}
