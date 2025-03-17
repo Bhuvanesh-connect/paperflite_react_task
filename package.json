@@ -1,7 +1,7 @@
 {
   "name": "paperflite_react_task",
   "version": "0.1.0",
-  "homepage": "https://github.com/Bhuvanesh-connect/paperflite_react_task",
+  "homepage": "https://bhuvanesh-connect.github.io/paperflite_react_task",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
