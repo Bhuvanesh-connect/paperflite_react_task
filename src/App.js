@@ -6,7 +6,7 @@ import LoginPage from './routing/LoginPage';
 function App() {
   return (
     <div className="App">
-        <BrowserRouter basename={'/'}>
+        <BrowserRouter basename="/paperflite_react_task">
             <LoginPage/>
         </BrowserRouter>
     </div>
