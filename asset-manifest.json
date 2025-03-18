@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/paperflite_react_task/static/css/main.68919d7d.css",
-    "main.js": "/paperflite_react_task/static/js/main.016d3531.js",
+    "main.js": "/paperflite_react_task/static/js/main.fd8588ef.js",
     "static/js/787.279515d9.chunk.js": "/paperflite_react_task/static/js/787.279515d9.chunk.js",
     "static/media/login_bg.jpg": "/paperflite_react_task/static/media/login_bg.86c4011cd1565af5d748.jpg",
     "static/media/illustration_openhead.png": "/paperflite_react_task/static/media/illustration_openhead.3a2208a3c06f3fbc7a2f.png",
@@ -10,11 +10,11 @@
     "index.html": "/paperflite_react_task/index.html",
     "static/media/icon-feather-eye.svg": "/paperflite_react_task/static/media/icon-feather-eye.02f96946432081efecb4.svg",
     "main.68919d7d.css.map": "/paperflite_react_task/static/css/main.68919d7d.css.map",
-    "main.016d3531.js.map": "/paperflite_react_task/static/js/main.016d3531.js.map",
+    "main.fd8588ef.js.map": "/paperflite_react_task/static/js/main.fd8588ef.js.map",
     "787.279515d9.chunk.js.map": "/paperflite_react_task/static/js/787.279515d9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.68919d7d.css",
-    "static/js/main.016d3531.js"
+    "static/js/main.fd8588ef.js"
   ]
 }
